@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="learnAlphabets" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="a.png" translatesAutoresizingMaskIntoConstraints="NO" id="lrO-jU-Pjr">
+                                <rect key="frame" x="180" y="64" width="240" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="V2L-HJ-LGc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQG-lr-2FN">
+                                <rect key="frame" x="287" y="359" width="26" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tda-Rw-3Xa">
+                                <rect key="frame" x="263" y="422" width="75" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tda-Rw-3Xa" firstAttribute="top" secondItem="rQG-lr-2FN" secondAttribute="bottom" constant="15" id="FP5-n2-hPB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tda-Rw-3Xa" secondAttribute="bottom" constant="143" id="Lcg-pv-aD6"/>
+                            <constraint firstItem="lrO-jU-Pjr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bBp-XS-CTJ"/>
+                            <constraint firstItem="rQG-lr-2FN" firstAttribute="top" secondItem="lrO-jU-Pjr" secondAttribute="bottom" constant="25" id="bP7-e5-T5A"/>
+                            <constraint firstItem="lrO-jU-Pjr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="hrq-VF-qXf"/>
+                            <constraint firstItem="rQG-lr-2FN" firstAttribute="centerX" secondItem="tda-Rw-3Xa" secondAttribute="centerX" id="lGq-cT-sYz"/>
+                            <constraint firstItem="lrO-jU-Pjr" firstAttribute="centerX" secondItem="rQG-lr-2FN" secondAttribute="centerX" id="vMP-ox-mbA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alphaCharLabel" destination="rQG-lr-2FN" id="Cpk-LH-QBQ"/>
+                        <outlet property="alphaNameLabel" destination="tda-Rw-3Xa" id="7QQ-LG-1yV"/>
+                        <outlet property="imgHolder" destination="lrO-jU-Pjr" id="Aui-sn-NG8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a.png" width="461" height="652"/>
+    </resources>
+</document>
